@@ -96,8 +96,22 @@ jobs:
           node-version: 20
           cache: 'pnpm'
 
+      - name: Sync lockfile
+        run: |
+          rm -f pnpm-lock.yaml
+          pnpm install --no-frozen-lockfile
+          git add pnpm-lock.yaml
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          if git status --porcelain | grep .; then
+            git commit -m "Update pnpm-lock.yaml"
+            git push
+          else
+            echo "No lockfile updates needed"
+          fi
+
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm build --log-order=stream
