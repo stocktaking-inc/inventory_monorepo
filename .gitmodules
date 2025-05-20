@@ -1,0 +1,12 @@
+[submodule "packages/site-policies"]
+	path = packages/site-policies
+	url = https://github.com/stocktaking-inc/site-policies.git
+	branch = main
+[submodule "packages/auth-frontend"]
+	path = packages/auth-frontend
+	url = https://github.com/stocktaking-inc/auth-frontend.git
+	branch = main
+[submodule "packages/core-front"]
+	path = packages/core-front
+	url = https://github.com/stocktaking-inc/core-front.git
+	branch = main
