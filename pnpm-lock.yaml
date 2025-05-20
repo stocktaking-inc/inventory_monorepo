@@ -5060,8 +5060,8 @@ packages:
       typescript: ^4.9.4 || ^5.0.2
       zod: ^3
 
-  zod@3.25.7:
-    resolution: {integrity: sha512-YGdT1cVRmKkOg6Sq7vY7IkxdphySKnXhaUmFI4r4FcuFVNgpCb9tZfNwXbT6BPjD5oz0nubFsoo9pIqKrDcCvg==}
+  zod@3.25.8:
+    resolution: {integrity: sha512-iJPWX8HoZ2VE21VrhHGU9jVo/kVDUQyqM9vF0MxDhW/fp2sAl1eVwGJgiYZdHGiMwQJImXIW80lKk0MnfDxqiQ==}
 
   zod@3.25.8:
     resolution: {integrity: sha512-iJPWX8HoZ2VE21VrhHGU9jVo/kVDUQyqM9vF0MxDhW/fp2sAl1eVwGJgiYZdHGiMwQJImXIW80lKk0MnfDxqiQ==}
@@ -5118,7 +5118,7 @@ snapshots:
     dependencies:
       sitemap: 8.0.0
       stream-replace-string: 2.0.0
-      zod: 3.25.7
+      zod: 3.25.8
 
   '@astrojs/telemetry@3.2.1':
     dependencies:
@@ -6686,7 +6686,11 @@ snapshots:
 
   '@types/sax@1.2.7':
     dependencies:
+<<<<<<< HEAD
       '@types/node': 17.0.45
+=======
+      '@types/node': 22.15.21
+>>>>>>> f1112a7e3471df2501a452cdc481ea014a80c354
 
   '@types/unist@3.0.3': {}
 
@@ -6929,9 +6933,9 @@ snapshots:
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.2
-      zod: 3.25.7
-      zod-to-json-schema: 3.24.5(zod@3.25.7)
-      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.7)
+      zod: 3.25.8
+      zod-to-json-schema: 3.24.5(zod@3.25.8)
+      zod-to-ts: 1.2.0(typescript@5.8.3)(zod@3.25.8)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -10127,16 +10131,16 @@ snapshots:
 
   yoctocolors@2.1.1: {}
 
-  zod-to-json-schema@3.24.5(zod@3.25.7):
+  zod-to-json-schema@3.24.5(zod@3.25.8):
     dependencies:
-      zod: 3.25.7
+      zod: 3.25.8
 
-  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.7):
+  zod-to-ts@1.2.0(typescript@5.8.3)(zod@3.25.8):
     dependencies:
       typescript: 5.8.3
-      zod: 3.25.7
+      zod: 3.25.8
 
-  zod@3.25.7: {}
+  zod@3.25.8: {}
 
   zod@3.25.8: {}
 
