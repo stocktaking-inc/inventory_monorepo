@@ -1,2 +1,4 @@
 packages:
-  - 'packages/*'
+  - 'packages/site-policies'
+  - 'packages/auth-frontend'
+  - 'packages/core-front'
